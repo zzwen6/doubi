@@ -755,8 +755,8 @@ Install_Libsodium(){
 		# wget  --no-check-certificate -N "https://github.com/jedisct1/libsodium/releases/download/${Libsodiumr_ver}/libsodium-${Libsodiumr_ver}.tar.gz"
 		wget  --no-check-certificate -N https://github.com/zzwen6/libsodium/archive/1.0.18.tar.gz -o libsodium-1.0.18.tar.gz
 		echo -e "${Info} 解压..."
-		# tar -xzf libsodium-${Libsodiumr_ver}.tar.gz && cd libsodium-${Libsodiumr_ver}
-		tar -xzf 1.0.18.tar.gz && cd 1.0.18
+		tar -xzf libsodium-${Libsodiumr_ver}.tar.gz && cd libsodium-${Libsodiumr_ver}
+		# tar -xzf 1.0.18.tar.gz && cd 1.0.18
 		
 		echo -e "${Info} 编译安装..."
 		./configure --disable-maintainer-mode && make -j2 && make install
@@ -772,8 +772,8 @@ Install_Libsodium(){
 		echo -e "${Info} 解压..."
 		# tar -xzf libsodium-${Libsodiumr_ver}.tar.gz && cd libsodium-${Libsodiumr_ver}
 		# wget  --no-check-certificate -N "https://github.com/jedisct1/libsodium/releases/download/${Libsodiumr_ver}/libsodium-${Libsodiumr_ver}.tar.gz"
-		# tar -xzf libsodium-${Libsodiumr_ver}.tar.gz && cd libsodium-${Libsodiumr_ver}
-		tar -xzf 1.0.18.tar.gz && cd 1.0.18
+		tar -xzf libsodium-${Libsodiumr_ver}.tar.gz && cd libsodium-${Libsodiumr_ver}
+		# tar -xzf 1.0.18.tar.gz && cd 1.0.18
 
 
 		echo -e "${Info} 编译安装..."
